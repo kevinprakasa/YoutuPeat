@@ -2,13 +2,20 @@
     "name": "YoutuPeat",
     "version": "1.0",
     "description": "Build an Extension!",
-    "permissions": ["activeTab","declarativeContent","storage"],
+    "permissions": [
+    	"tabs",
+    	"activeTab",
+    	"declarativeContent",
+    	"storage",
+    	"http://www.youtube.com/*"
+    ],
     "background": {
       "scripts": ["background.js"],
       "persistent": false
     },
-    "page_action": {
+    "browser_action": {
       "default_popup": "popup.html",
+      "default_title": "YoutuPeat",
 			"default_icon": {
         "16": "images/get_started16.png",
         "32": "images/get_started32.png",
